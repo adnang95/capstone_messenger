@@ -1,0 +1,16 @@
+<div class="backdrop" [ngStyle]="{'display': display}"></div>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': display}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ error?.title }}</h5>
+      </div>
+      <div class="modal-body">
+        <p>{{ error?.message }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="onErrorHandled()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

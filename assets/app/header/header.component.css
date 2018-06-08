@@ -1,0 +1,6 @@
+.nav-pills li a{
+  background: rgba(0,0,0,0);
+}
+.nav-pills li a:hover{
+  color: white;
+}

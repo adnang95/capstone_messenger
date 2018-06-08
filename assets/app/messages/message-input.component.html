@@ -1,0 +1,17 @@
+<div class="col-md-8 col-md-offset-2">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" ngNativeValidate>
+    <div class="form-group">
+      <label for="content">Write a message!</label>
+      <input
+        placeholder="What's up?"
+        type="text"
+        id="content"
+        class="form-control"
+        [ngModel]="message?.content"
+        name="content"
+        required>
+    </div>
+    <button class="btn btn-danger" type="button" (click)="onClear(f)">Clear</button>
+    <button class="btn btn-primary" type="submit">Send</button>
+  </form>
+</div>
